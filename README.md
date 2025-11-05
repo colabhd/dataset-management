@@ -14,3 +14,6 @@ O sistema tem como objetivo centralizar, documentar e gerenciar todas as bases d
 ## Tecnologias Utilizadas
 
 - CKAN
+
+## Estrutura geral do Ckan
+

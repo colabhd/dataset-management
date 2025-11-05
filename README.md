@@ -17,3 +17,16 @@ O sistema tem como objetivo centralizar, documentar e gerenciar todas as bases d
 
 ## Estrutura geral do Ckan
 
+    #ESTRUTURA ORGANIZACIONAL DO CKAN 
+
+        #COMO OS DADOS CHEGAM AO CKAN:
+         Os dados   presentes no CKAN foram depositados pela interface disponibilizada pelo sistema ou por API (Application Programming Interface)
+
+        #COMO OS DADOS SÃO ORGANIZADOS PELO CKAN ? 
+            Datasets: As unidades informacionais do CKAN  são chamadas de "Datasets", recursos compostos por metadatos e que possuem relações de dependencia variadas. 
+            Organizações: Tendo em vista o fato de que o CKAN foi pensado para ser utilizado por várias instituições é natural que os datasets sejam agrupados e atribuidos ao que são chamadas aqui de organizações, que podem ser organizadas de acordo com a preferência do usuário (pode ser usada a criação de grupos temáticos, por exemplo).
+
+
+
+
+        

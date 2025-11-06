@@ -48,7 +48,17 @@ Os dados   presentes no CKAN foram depositados pela interface disponibilizada pe
                 O link para o registro de usuários 
 
 
+###
+ Como realizar oo registro :
+                O link para o registro de usuários fica disponivel na interface do ckan (no cabeçalho), e, para completar o cadastro na plataforma é necessário informar o nome de usuáqrio ( que deve ter apenas letras, números e caracteres),  o nome completo, o endereço de email e uma senha. Nota-se que caso haja algum problema com o login é possivel solicitar a recuperação de senha( link : https://ckan.org/accounts/password/reset/).
 
+        #GERENCIAMENTO DE CONTEÚDO NO CKAN
+            As ferramentas do CKAN podem ser utilizadas para que você realize adição, exclusão e alterações de conjuntos de dados (datasets)
+
+            #TUTORIAL : 
+
+                A adição do conjunto de dados : 
+###
 >>>>>>> 497725e (add de mais tópicos)
 
 

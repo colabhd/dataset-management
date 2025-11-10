@@ -41,7 +41,7 @@ Apesar de fazer parte do uso da ferramenta para depósito de dados, não é nece
  O link para o registro de usuários fica disponivel na interface do ckan (no cabeçalho), e, para completar o cadastro na plataforma é necessário informar o nome de usuáqrio ( que deve ter apenas letras, números e caracteres),  o nome completo, o endereço de email e uma senha. Nota-se que caso haja algum problema com o login é possivel solicitar a recuperação de senha( link : https://ckan.org/accounts/password/reset/).
 
 # GERENCIAMENTO DE CONTEÚDO NO CKAN
-            As ferramentas do CKAN podem ser utilizadas para que você realize adição, exclusão e alterações de conjuntos de dados (datasets)
+As ferramentas do CKAN podem ser utilizadas para que você realize adição, exclusão e alterações de conjuntos de dados (datasets)
 
 # TUTORIAL : 
 
@@ -55,7 +55,7 @@ A adição dos dados requer a descrição e a carga do arquivo, ao selecionar a 
 * Selecionar a opção "adicionar novos conjuntos de dados" 
 * Em seguida, utilizar o formulário fornecido pelo CKAN para descrever seu conjunto de dados : Acrescentar  o __título__ que será único em todo o CKAN, a __descrição__ que pode incluir informações sobre a origem do dado e fatos gerais sobre eles, as __etiquetas__ recurso importante para ajudar os usuários a encontrar os dados, a __licença__ que é necessária para  que as pessoas possam usar os dados coretamente, a __organização__ que poderá deter o direito sobre esses dados, a __visibilidade__, ou seja, a escolha de tornar os dados públicos ou não ( os conjuntos de dados privados só podem ser vistos pelos membros da organização), a __fonte__ dos dados, a __versão__ dos dados ( que pode ser alterada posteriormente), o __autor__ (pessoa ou organização responsável pela produção dos dados), o __email do autor__, nome e email do __mantenedor__ se julgar necessário e os __campos personalizados__ contendo informações relevantes para o criador do conjunto de dados. __Observação:__ O único campo obrigatório do formulário aqwui mencionado é o título, entretanto é recomendado que os outros também sejam preenchidos.Nota-se também que a maioria das informações colocadas aqui podem ser alteradas depois.
 *  __Próximo : adicionar dados__
-*  Para carregar os arquivos de dados 
+*  Para carregar os arquivos de dados é necessário a  solicitação  de __recursos__ para a solicitação de carregamento de dados, onde O __NOME__, __descrição__ e __formato__ do arquivo precisam ser exclarecedos, é importante mencionar que o recurso não precisa ser único, isto é, um conjunto de dados (_dataset_) pode ter mais de um recurso.
 
 
 

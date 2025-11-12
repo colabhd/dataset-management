@@ -55,7 +55,162 @@ A adição dos dados requer a descrição e a carga do arquivo, ao selecionar a 
 * Selecionar a opção "adicionar novos conjuntos de dados" 
 * Em seguida, utilizar o formulário fornecido pelo CKAN para descrever seu conjunto de dados : Acrescentar  o __título__ que será único em todo o CKAN, a __descrição__ que pode incluir informações sobre a origem do dado e fatos gerais sobre eles, as __etiquetas__ recurso importante para ajudar os usuários a encontrar os dados, a __licença__ que é necessária para  que as pessoas possam usar os dados coretamente, a __organização__ que poderá deter o direito sobre esses dados, a __visibilidade__, ou seja, a escolha de tornar os dados públicos ou não ( os conjuntos de dados privados só podem ser vistos pelos membros da organização), a __fonte__ dos dados, a __versão__ dos dados ( que pode ser alterada posteriormente), o __autor__ (pessoa ou organização responsável pela produção dos dados), o __email do autor__, nome e email do __mantenedor__ se julgar necessário e os __campos personalizados__ contendo informações relevantes para o criador do conjunto de dados. __Observação:__ O único campo obrigatório do formulário aqwui mencionado é o título, entretanto é recomendado que os outros também sejam preenchidos.Nota-se também que a maioria das informações colocadas aqui podem ser alteradas depois.
 *  __Próximo : adicionar dados__
-*  Para carregar os arquivos de dados é necessário a  solicitação  de __recursos__ para a solicitação de carregamento de dados, onde O __NOME__, __descrição__ e __formato__ do arquivo precisam ser exclarecedos, é importante mencionar que o recurso não precisa ser único, isto é, um conjunto de dados (_dataset_) pode ter mais de um recurso.
+*  Para carregar os arquivos de dados é necessário a  solicitação  de __recursos__ para a solicitação de carregamento de dados, onde O __NOME__, __descrição__ e __formato__ (XLS, JSON, PDF, etc) do arquivo precisam ser exclarecedos, é importante mencionar que o recurso não precisa ser único, isto é, um conjunto de dados (_dataset_) pode ter mais de um recurso. É possivel realizar o upload de arquivos ou links com os dados no ckan.
+
+* __Como alterar um conjunto de dados ?__ 
+
+   É possivel alterar qualquer conjunto de dados pertencente à mesma organização,e caso o _dataset_ não pertença a nenhuma organização qualquer usuário cadastrado pode altera-lo. 
+
+   * __Aterando um conjunto de dados__: 
+
+        1.Acesse a página do conjunto de dados desejado
+        2. Clique no campo  "gerenciar" que vai aparecer do lado direito do conjunto de dados.
+        3. Preencher o formulário de alteração, excluindomou adicionando informações no seu _dataset_
+        4. Clicar em “Atualizar conjunto de dados”
+
+    
+* __Alterar, escluir e adicionar recursos__ :
+
+    Devido ao fato de um único _dataset_ poder ser constituido por varios tipos de dados, é possivel acrescentar mais de um tipo de recurso assim como altera-los e exclui-los.
+
+
+
+   *    __Gerenciando seus recursos__: 
+
+        1.  Abrir a página do conjunto de dados 
+        2. Entrar no modo de edição do conjunto de dados
+        3. Clicar na aba de edição de recursos
+        4. Selecionar o recurso desejado (Alterar informações)
+        5. Caso o objetivo seja acrescentar um novo recurso é necessário clicar  em “Adicionando um conjunto de dados”
+        6. Para alterar informações ou excluir recursos é preciso acessar a página do recurso desejado. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

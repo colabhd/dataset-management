@@ -86,7 +86,34 @@ A adição dos dados requer a descrição e a carga do arquivo, ao selecionar a 
 
 
 
+* __Como excluir um conjunto de dados :__
 
+O CKAN fornece ferramentas para que seja feita a exclusão de conjuntos de dados, entretante, esse proceso é irreversivel e requer muito cuidado. Já na página do conjunto de dados deve-se entrar na edição e então clicar no botão "excluir" em seguida, deve-se confirmar a ação.
+
+* __As organizações:__ 
+
+     As organizações são responsaveis pela maior parte dos conjuntos de dados , onde  seus membros fazem a manutenção e gerenciamento dos _datasets_. As permissões concedidas aos usuários membros são definidas pelo encarregado da organização, e, cada organização possui sua página onde são encontradas informações gerais como histórico de busca e edições, para que as organizações possam obter maior controle sobre seus dados
+
+     * __Criando uma organização:__ 
+
+     1. Clicar no ícone "organizações na parte superior da página
+     2. Caso tenha permissão o botão "adicionar uma organização" acima da caixa de pesquisa.
+     3. Preencher o formulário de descrição da organização (descrição, url e imagem como elementos opcionais)
+     4. Alterar permissões: Depois que a organização foi criada é necessário direcionar os previlégios aos usuários responsáveis.
+
+     * __Administrando sua organização:__
+     
+     O usuário que cria uma organização torna-se automaticamente seu administrador, e assim, detentor de todos os previlágios dentro dela, esse usuário é o único capaz de gerenciar a organização, ou delegar essa permissão para outra pessoa.
+
+     __Como gerenciar sua organização:__
+
+     1. __Edição:__ É posivel editar as informações fornecidas durante a criação da organização a qualquer momento.(título, descrição, imagem e campos personalizados)
+     2. __Conjuntos de dados:__  O administrador pode gerenciar os conjuntos de dados (ou _datasets_) pertencentes à organizaçãp
+     3. __Membresia__: É possível também adicionar, remover e atribuir funções aos membros da organização.
+     
+
+* __Criação de *grupos*:__      
+        
 
 
 

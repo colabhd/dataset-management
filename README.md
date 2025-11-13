@@ -1,20 +1,27 @@
+```markdown
+# Sistema de Gestão de Datasets com CKAN
 
-# Sistema de Gestão de Datasets
+Este repositório contém a documentação e os arquivos de configuração para a implementação de um portal de dados para o CPPS/UNESP e IPPR/UNESP, utilizando a plataforma [CKAN (Comprehensive Knowledge Archive Network)](https://ckan.org/).
 
+O objetivo principal é substituir a atual planilha de controle de datasets por um sistema centralizado, robusto e que facilite a busca, o compartilhamento e a reutilização de dados de pesquisa.
 
-O sistema tem como objetivo centralizar, documentar e gerenciar todas as bases de dados mantidas, em conjunto, pelo Centro de Pesquisa POlítica e Social (CPPS/UNESP) e pelo Laboratório Multiusuário do Instituto de Políticas Públicas e Relações Internacionais (IPPR/UNESP). 
+## 🚀 Instalação e Ambiente de Desenvolvimento
 
+Para executar e desenvolver neste projeto, é necessário ter o Docker e o Docker Compose instalados em sua máquina.
 
-## Funcionalidades
+#### ETAPA 01: Clonar o repositório
 
-- Inclusão, atualização, exclusão e descrição padronizada
-- Cada conjunto de dados passa a ter metadados completos 
-- Pode ser atualizado tanto manualmente pela interface web quanto automaticamente via API.
+Utilize o método de sua preferência para clonar o projeto.
 
-## Tecnologias Utilizadas
+```bash
+# Via SSH (Recomendado)
+git clone git@github.com:colabhd/dataset-management.git
 
-- CKAN
+# Via HTTPS
+git clone https://github.com/colabhd/dataset-management.git
+```
 
+<<<<<<< Updated upstream
 ## Estrutura geral do CKAN
 
 ## ESTRUTURA ORGANIZACIONAL DO CKAN 
@@ -262,3 +269,108 @@ O CKAN fornece ferramentas para que seja feita a exclusão de conjuntos de dados
 
 
         
+=======
+#### ETAPA 02: Iniciar os serviços com Docker
+
+Após clonar, acesse a pasta raiz do projeto e execute o comando abaixo para construir e iniciar todos os containers necessários (CKAN, PostgreSQL, Solr, Redis).
+
+```bash
+cd dataset-management
+docker-compose up -d
+```
+
+-   O comando `docker-compose up` irá baixar as imagens e iniciar os serviços.
+-   A flag `-d` (detached mode) executa os containers em segundo plano.
+
+Após a conclusão, a instância do CKAN estará disponível em `http://localhost:5000`.
+
+## 🔄 Versionamento
+
+Abaixo estão as instruções para realizar o versionamento de suas contribuições de forma padronizada.
+
+### ETAPA 01: Gravando mudanças
+
+Utilize o seguinte comando para adicionar e registrar todas as modificações feitas nos arquivos:
+
+```bash
+git add . && git commit -m 'insira uma mensagem clara e descritiva'
+```
+
+**Onde:**
+
+-   `git add .` adiciona todas as mudanças (novos arquivos, modificações) à "área de preparação" (staging area), marcando-as para serem incluídas no próximo commit.
+-   `&&` é um operador que encadeia comandos, executando o segundo apenas se o primeiro for bem-sucedido.
+-   `git commit -m 'mensagem'` grava permanentemente as mudanças que estão na staging area no histórico do repositório local, associadas à mensagem descritiva que você fornecer.
+
+### ETAPA 02: Sincronizando com o repositório remoto
+
+As mudanças feitas com `git commit` são salvas apenas na sua máquina local. É fundamental sincronizá-las com o repositório central no GitHub.
+
+```bash
+git pull origin main && git push origin main
+```
+
+**Onde:**
+
+-   `git pull origin main` busca e integra as mudanças mais recentes do branch `main` do repositório remoto (`origin`) ao seu repositório local. **É crucial executar isso antes do `push` para evitar conflitos.**
+-   `git push origin main` envia os seus commits locais para o branch `main` do repositório remoto, tornando suas contribuições visíveis para a equipe.
+
+## 🧠 Entendimento da Plataforma (CKAN)
+
+Esta seção documenta o estudo realizado sobre a arquitetura e os conceitos fundamentais do CKAN, que guiam o desenvolvimento deste projeto.
+
+### Arquitetura Geral
+
+A plataforma é modular e organizada em camadas distintas que se comunicam entre si.
+
+```
++--------------------------------+
+|     Frontend (Interface Web)   |  <-- Camada de Apresentação (Templates Jinja2)
++--------------------------------+
+                | (Comunicação via API)
++--------------------------------+
+|      Backend (CKAN Core)       |  <-- Camada de Lógica (Python)
+| - API de Ações e Lógica        |
+| - Modelo de Domínio e Permissões|
++--------------------------------+
+                | (Persistência e Indexação)
++--------------------------------+       +--------------------------------+
+|   Banco de Dados (PostgreSQL)  | ----> |   Motor de Busca (Solr)        |
++--------------------------------+       +--------------------------------+
+```
+
+### Conceitos Chave
+
+-   **`Dataset`**: A unidade principal de informação. É um contêiner para metadados (título, descrição, fonte, tags) que descreve um conjunto de dados, como "Resultados Eleitorais de 2022".
+-   **`Resource`**: Os dados propriamente ditos, vinculados a um `Dataset`. Pode ser um arquivo (CSV, Shapefile) ou um link para uma API. Um `Dataset` pode conter múltiplos `Resources`.
+-   **`Organization`**: Agrupa datasets que pertencem a uma mesma entidade (ex: "CPPS", "IPPR"). É a principal forma de controlar permissões de edição.
+-   **`Group`**: Usado para criar coleções temáticas de datasets, que podem pertencer a diferentes organizações (ex: "Dados sobre Educação").
+
+### Níveis de Usuário e Permissões
+
+-   **Anônimo:** Usuário não logado. Pode apenas visualizar e buscar datasets públicos.
+-   **Identificado (Membro):** Usuário com cadastro. Pode criar, editar e excluir datasets dentro das `Organizations` das quais é membro.
+-   **Administrador:** Tem controle total sobre a instância, podendo gerenciar usuários, organizações, extensões e customizações do sistema.
+
+## 📁 Estrutura do Projeto
+
+A estrutura de pastas foi planejada para manter o projeto organizado e escalável.
+
+```
+dataset-management/
+ ├── ckan/              # Configuração da instância CKAN (ckan.ini, etc.)
+ ├── ckanext-cpps/      # Diretório para a extensão customizada do CPPS (futuro)
+ ├── scripts/           # Scripts auxiliares (ex: migração, automação)
+ │    └── migration/    # Scripts para migrar dados da planilha para o CKAN
+ ├── docker-compose.yml # Arquivo de orquestração dos serviços Docker
+ └── README.md          # Esta documentação
+```
+
+## ✅ Próximos Passos e Issues Futuras
+
+-   **[Fase 2] Configuração do Ambiente:** Validar o `docker-compose.yml` e garantir que toda a equipe consiga executar a instância localmente sem problemas.
+-   **[Fase 2] Definição do Esquema de Metadados:** Criar o arquivo de schema para a extensão `ckanext-scheming`, detalhando todos os campos customizados necessários para os datasets do CPPS/IPPR.
+-   **[Fase 2] Prova de Conceito (PoC) da Migração:** Desenvolver um script em Python (`scripts/migration/migrate.py`) para ler 10-20 linhas da planilha e inseri-las na instância de desenvolvimento via API do CKAN, para validar o mapeamento de campos.
+-   **[Fase 3] Integração com Recoll:** Estudar e planejar a integração para permitir a busca de texto completo dentro do conteúdo dos arquivos (PDFs, DOCs) anexados como recursos.
+```
+>>>>>>> Stashed changes

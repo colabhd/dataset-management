@@ -1,4 +1,4 @@
-```markdown
+
 # Sistema de Gestão de Datasets com CKAN
 
 Este repositório contém a documentação e os arquivos de configuração para a implementação de um portal de dados para o CPPS/UNESP e IPPR/UNESP, utilizando a plataforma [CKAN (Comprehensive Knowledge Archive Network)](https://ckan.org/).
@@ -21,7 +21,6 @@ git clone git@github.com:colabhd/dataset-management.git
 git clone https://github.com/colabhd/dataset-management.git
 ```
 
-<<<<<<< Updated upstream
 ## Estrutura geral do CKAN
 
 ## ESTRUTURA ORGANIZACIONAL DO CKAN 
@@ -39,44 +38,44 @@ O template do CKAN é desenhado para facilitar a compreensão das informações 
 
  ## CADASTRO E LOGIN NO CKAN
 Apesar de fazer parte do uso da ferramenta para depósito de dados, não é necessário que os usuários que estejam apenas realizando buscas possuam um login dentro do CKAN.
-## Tipos de usuário dentro do CKAN : 
+## Tipos de usuário dentro do CKAN: 
  * ANÔNIMO:Não possui cadastro e pode apenas visualizar e realizar buscas de conjuntos de dados presentes na plataforma.
 * IDENTIFICADO:Pode criar organizações, grupos e conjuntos de dados, desde que esteja vinculado a uma instituição e essas configurações estejam habilitadas.
 * ADMNISTRADOR: Tem acesso a funções relacionadas à administração do sistema, pode criar e excluir conteúdos além  de excluir outros usuários e realizar customizações no sistema.
 
-## Como realizar oo registro :
+## Como realizar oo registro:
  O link para o registro de usuários fica disponivel na interface do ckan (no cabeçalho), e, para completar o cadastro na plataforma é necessário informar o nome de usuáqrio ( que deve ter apenas letras, números e caracteres),  o nome completo, o endereço de email e uma senha. Nota-se que caso haja algum problema com o login é possivel solicitar a recuperação de senha( link : https://ckan.org/accounts/password/reset/).
 
 # GERENCIAMENTO DE CONTEÚDO NO CKAN
 As ferramentas do CKAN podem ser utilizadas para que você realize adição, exclusão e alterações de conjuntos de dados (datasets)
 
-# TUTORIAL : 
+# TUTORIAL: 
 
-## A adição do conjunto de dados : 
+## A adição do conjunto de dados: 
 
 A adição dos dados requer a descrição e a carga do arquivo, ao selecionar a opção de adicionar novos conjuntos de dados o usuário deve descreve-los para que assim aja a recuperação e organização, em seguida, carrega os dados presentes no arquivo, criando assim novos conjuntos de dados que ficarão presentes no  CKAN. 
 * __Observação:__ Algumas instalações do CKAN requerem a participação de uma organização, através da versão demo (https://demo.ckan.org/) é possível adicionar conjuntos de dados sem fazer parte de uma organização.
 
-### Passo - a - passo : 
+### Passo a passo:
 
 * Selecionar a opção "adicionar novos conjuntos de dados" 
 * Em seguida, utilizar o formulário fornecido pelo CKAN para descrever seu conjunto de dados : Acrescentar  o __título__ que será único em todo o CKAN, a __descrição__ que pode incluir informações sobre a origem do dado e fatos gerais sobre eles, as __etiquetas__ recurso importante para ajudar os usuários a encontrar os dados, a __licença__ que é necessária para  que as pessoas possam usar os dados coretamente, a __organização__ que poderá deter o direito sobre esses dados, a __visibilidade__, ou seja, a escolha de tornar os dados públicos ou não ( os conjuntos de dados privados só podem ser vistos pelos membros da organização), a __fonte__ dos dados, a __versão__ dos dados ( que pode ser alterada posteriormente), o __autor__ (pessoa ou organização responsável pela produção dos dados), o __email do autor__, nome e email do __mantenedor__ se julgar necessário e os __campos personalizados__ contendo informações relevantes para o criador do conjunto de dados. __Observação:__ O único campo obrigatório do formulário aqwui mencionado é o título, entretanto é recomendado que os outros também sejam preenchidos.Nota-se também que a maioria das informações colocadas aqui podem ser alteradas depois.
-*  __Próximo : adicionar dados__
+*  __Próximo: adicionar dados__
 *  Para carregar os arquivos de dados é necessário a  solicitação  de __recursos__ para a solicitação de carregamento de dados, onde O __NOME__, __descrição__ e __formato__ (XLS, JSON, PDF, etc) do arquivo precisam ser exclarecedos, é importante mencionar que o recurso não precisa ser único, isto é, um conjunto de dados (_dataset_) pode ter mais de um recurso. É possivel realizar o upload de arquivos ou links com os dados no ckan.
 
-* __Como alterar um conjunto de dados ?__ 
+* __Como alterar um conjunto de dados?__ 
 
    É possivel alterar qualquer conjunto de dados pertencente à mesma organização,e caso o _dataset_ não pertença a nenhuma organização qualquer usuário cadastrado pode altera-lo. 
 
    * __Aterando um conjunto de dados__: 
 
-        1.Acesse a página do conjunto de dados desejado
+        1. Acesse a página do conjunto de dados desejado
         2. Clique no campo  "gerenciar" que vai aparecer do lado direito do conjunto de dados.
         3. Preencher o formulário de alteração, excluindomou adicionando informações no seu _dataset_
         4. Clicar em “Atualizar conjunto de dados”
 
     
-* __Alterar, escluir e adicionar recursos__ :
+* __Alterar, escluir e adicionar recursos__:
 
     Devido ao fato de um único _dataset_ poder ser constituido por varios tipos de dados, é possivel acrescentar mais de um tipo de recurso assim como altera-los e exclui-los.
 
@@ -93,7 +92,7 @@ A adição dos dados requer a descrição e a carga do arquivo, ao selecionar a 
 
 
 
-* __Como excluir um conjunto de dados :__
+* __Como excluir um conjunto de dados:__
 
 O CKAN fornece ferramentas para que seja feita a exclusão de conjuntos de dados, entretante, esse proceso é irreversivel e requer muito cuidado. Já na página do conjunto de dados deve-se entrar na edição e então clicar no botão "excluir" em seguida, deve-se confirmar a ação.
 
@@ -269,7 +268,6 @@ O CKAN fornece ferramentas para que seja feita a exclusão de conjuntos de dados
 
 
         
-=======
 #### ETAPA 02: Iniciar os serviços com Docker
 
 Após clonar, acesse a pasta raiz do projeto e execute o comando abaixo para construir e iniciar todos os containers necessários (CKAN, PostgreSQL, Solr, Redis).
@@ -373,4 +371,3 @@ dataset-management/
 -   **[Fase 2] Prova de Conceito (PoC) da Migração:** Desenvolver um script em Python (`scripts/migration/migrate.py`) para ler 10-20 linhas da planilha e inseri-las na instância de desenvolvimento via API do CKAN, para validar o mapeamento de campos.
 -   **[Fase 3] Integração com Recoll:** Estudar e planejar a integração para permitir a busca de texto completo dentro do conteúdo dos arquivos (PDFs, DOCs) anexados como recursos.
 ```
->>>>>>> Stashed changes

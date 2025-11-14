@@ -113,8 +113,20 @@ O CKAN fornece ferramentas para que seja feita a exclusão de conjuntos de dados
      
 
 * __Criação de *grupos*:__      
+             
         
+  A criação de um grupo é uma maneira de agrupar  conjuntos de dados (_datasets_) de diferentes organizações, em um grupo é possível separar os _datasets_ de acordo com diferentes categorias ( tipo, temática e assunto).É importante mencionar que os grupos, assim como as organizações possuem usuários encarregados de sua administração, a diferença é que os membros dos grupos não possuem permissão para editar os conjuntos de dados, aqueles que fazem parte de um grupo podem apenas acrescentar ou remover _datasets_ do seu grupo, aquele qe for __administrador__ do grupo pode ainda, editar suas informações.
 
+  * __Como gerenciar um grupo?__
+  O administrador do grupo é sempre o usuário que o criou, sendo aasim, apenas esse usuário e aqule que tiver sua permissão podem alterar as informações e usufruir dos previlégios de gerenciamento.
+
+* __Como recuperar um conjunto de dados?__
+
+     A recuperação de dados é uma das principais funções do CKAN, afinal, os dados são depositados e organizados em grupos para que os ussuários possam acessá-los.
+     
+     * __Como fazer a busca:__ 
+      
+          A busca pe feita por meio de termos, 
 
 
 

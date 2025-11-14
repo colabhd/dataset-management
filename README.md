@@ -16,7 +16,7 @@ Utilize o método de sua preferência para clonar o projeto.
 ```bash
 # Via SSH (Recomendado)
 git clone git@github.com:colabhd/dataset-management.git
-
+ 
 # Via HTTPS
 git clone https://github.com/colabhd/dataset-management.git
 ```
